@@ -1,28 +1,33 @@
-# proyecto-javascript
+# Cocktail Maps Frontend
 
-Este proyecto muestra la información obtenida del servicio web Cocktails Map Web Servic, link: https://cocktail-maps-ws.herokuapp.com/
+## Description
 
-El link al deploy en Heroku de este proyecto javascript es: https://cocktail-maps.herokuapp.com/
+This project is the frontend for the Cocktail Maps application, which allows users to explore data about bars, cocktails, and tutorials on how to make cocktails. Users can access data uploaded by registered users on the backend project, but they cannot register or log in through this frontend application.
 
-## Project setup
-```
-npm install
-```
+## Prerequisites
+Before running this project, ensure that the web service is active on port 80.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Installation
+Clone the repository:
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
+```git clone https://github.com/alanrychert/Cocktail-Maps/```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Navigate to the project directory:
+
+```cd frontend```
+
+Install the dependencies:
+
+``` npm install ```
+
+Running the Project
+
+To start the development server, use the following command:
+
+``` npm run serve ```
+
+The application will be accessible at http://localhost:8080.
+
+## Note
+Ensure that the web service is running to access the full functionality of the application.
