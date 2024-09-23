@@ -57,7 +57,7 @@ export default {
   methods: {
     getTrago(){
         axios
-            .get("https://cocktail-maps-ws.herokuapp.com/tragos/"+this.$route.params.id)
+            .get("http://localhost:80/tragos/"+this.$route.params.id)
             .then(res =>{
               this.trago=res.data[0];
             })
@@ -68,7 +68,7 @@ export default {
       getPage(){
         this.loading=true
         axios
-            .get("https://cocktail-maps-ws.herokuapp.com/tutorials/byTrago/"+this.$route.params.id+"?page="+this.page)
+            .get("http://localhost:80/tutorials/byTrago/"+this.$route.params.id+"?page="+this.page)
             .then(res =>{
               this.tutorials=res.data.tutorials;
               this.lastPage=res.data.lastPage;

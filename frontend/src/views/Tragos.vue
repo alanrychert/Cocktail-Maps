@@ -84,7 +84,7 @@ export default {
       getPage(){
         this.loading=true;
         axios
-            .get("https://cocktail-maps-ws.herokuapp.com/tragos?page="+this.page)
+            .get("http://localhost:80/tragos?page="+this.page)
             .then(res =>{
               this.tragos=res.data.tragos;
               this.lastPage=res.data.lastPage;

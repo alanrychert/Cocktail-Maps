@@ -56,7 +56,7 @@ export default {
   methods: {
       getBar(){
         axios
-            .get("http:localhost/bars/"+this.$route.params.id)
+            .get("http://localhost:80/bars/"+this.$route.params.id)
             .then(res =>{
               this.bar=res.data[0];
             })
@@ -67,7 +67,7 @@ export default {
       getPage(){
         this.loading=true
         axios
-            .get("https://cocktail-maps-ws.herokuapp.com/tragos/byBar/"+this.$route.params.id+"?page="+this.page)
+            .get("http://localhost:80/tragos/byBar/"+this.$route.params.id+"?page="+this.page)
             .then(res =>{
               this.tragos=res.data.tragos;
               this.lastPage=res.data.lastPage;

@@ -28,7 +28,7 @@ export default {
   methods: {
     getTutorial(){
         axios
-            .get("https://cocktail-maps-ws.herokuapp.com/tutorials/"+this.$route.params.id)
+            .get("http://localhost:80/tutorials/"+this.$route.params.id)
             .then(res =>{
               this.tutorial=res.data[0];
             })

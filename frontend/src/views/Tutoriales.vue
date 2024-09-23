@@ -84,7 +84,7 @@ export default {
       getPage(){
         this.loading=true;
         axios
-            .get("https://cocktail-maps-ws.herokuapp.com/tutorials?page="+this.page)
+            .get("http://localhost:80/tutorials?page="+this.page)
             .then(res =>{
               this.tutorials=res.data.tutorials;
               this.lastPage=res.data.lastPage;
