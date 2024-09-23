@@ -1,0 +1,90 @@
+# General ignores
+.DS_Store
+Thumbs.db
+
+# Laravel (Backend)
+/vendor/
+/node_modules/
+.env
+.env.backup
+.env.local
+.phpunit.result.cache
+/public/storage
+/storage/*.key
+/storage/debugbar
+/storage/logs/*.log
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/app/public
+/database/*.sqlite
+
+# Laravel Composer files
+composer.phar
+composer.lock
+
+# Laravel artisan files
+.phpunit.result.cache
+Homestead.yaml
+Homestead.json
+/nova
+/spark
+
+# Node.js & Vue.js (Web service & Frontend)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+/dist/
+/build/
+/public/
+/.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vue.js specific
+.vuepress/dist
+.vuepress/.temp
+.vscode/
+.idea/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+/node_modules/
+
+# Build output directories
+/dist/
+/build/
+/.cache/
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Optional eslint cache
+.eslintcache
+
+# Optional babel cache
+.babel.json
+
+# Test coverage
+/coverage/
+*.lcov
+/lcov-report/
+
+# Optional lock files for Node.js
+package-lock.json
+yarn.lock

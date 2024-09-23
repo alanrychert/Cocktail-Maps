@@ -1,0 +1,6 @@
+git push heroku tubranch:main
+
+
+$response = tap($kernel->handle(
+    $request = Request::capture()
+))->send(); esto lo cambié en index.php por que no andaba el login

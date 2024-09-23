@@ -1,0 +1,431 @@
+{
+	"info": {
+		"_postman_id": "47108c90-3ef3-42d3-bfc2-e6daa0c6855a",
+		"name": "Coleccion proyecto 2 servicio web",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Bares",
+			"item": [
+				{
+					"name": "Bares",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cocktail-maps-ws.herokuapp.com/bars",
+							"protocol": "https",
+							"host": [
+								"cocktail-maps-ws",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"bars"
+							]
+						},
+						"description": "Obtiene todos los bares"
+					},
+					"response": []
+				},
+				{
+					"name": "Bar id=1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cocktail-maps-ws.herokuapp.com/bars/1",
+							"protocol": "https",
+							"host": [
+								"cocktail-maps-ws",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"bars",
+								"1"
+							]
+						},
+						"description": "Obtiene el bar con id=1"
+					},
+					"response": []
+				},
+				{
+					"name": "Imagen Bar id=1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cocktail-maps-ws.herokuapp.com/bars/1/image",
+							"protocol": "https",
+							"host": [
+								"cocktail-maps-ws",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"bars",
+								"1",
+								"image"
+							]
+						},
+						"description": "Obtiene la imagen del bar con ID=1 (Es un bar que no tiene imagen, para probar que devuelve 404 y un json con información del error)"
+					},
+					"response": []
+				},
+				{
+					"name": "Bar id=2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cocktail-maps-ws.herokuapp.com/bars/2",
+							"protocol": "https",
+							"host": [
+								"cocktail-maps-ws",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"bars",
+								"2"
+							]
+						},
+						"description": "Obtiene el bar con ID=2"
+					},
+					"response": []
+				},
+				{
+					"name": "Imagen Bar id=2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cocktail-maps-ws.herokuapp.com/bars/2/image",
+							"protocol": "https",
+							"host": [
+								"cocktail-maps-ws",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"bars",
+								"2",
+								"image"
+							]
+						},
+						"description": "Obtiene un string que corresponde la codificación en 64 bits de la imagen correspondinete al bar con ID=2"
+					},
+					"response": []
+				}
+			],
+			"description": "Contiene los request correspondientes a bares"
+		},
+		{
+			"name": "Tragos",
+			"item": [
+				{
+					"name": "Tragos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cocktail-maps-ws.herokuapp.com/tragos",
+							"protocol": "https",
+							"host": [
+								"cocktail-maps-ws",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"tragos"
+							]
+						},
+						"description": "Obtiene todos los tragos"
+					},
+					"response": []
+				},
+				{
+					"name": "Trago id=1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cocktail-maps-ws.herokuapp.com/tragos/1",
+							"protocol": "https",
+							"host": [
+								"cocktail-maps-ws",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"tragos",
+								"1"
+							]
+						},
+						"description": "Obtiene el trago con ID = 1"
+					},
+					"response": []
+				},
+				{
+					"name": "Imagen Trago id=1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cocktail-maps-ws.herokuapp.com/tragos/1/image",
+							"protocol": "https",
+							"host": [
+								"cocktail-maps-ws",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"tragos",
+								"1",
+								"image"
+							]
+						},
+						"description": "Obtiene la imagen del trago con ID=1 (Es un trago que no tiene imagen, para probar que devuelve 404 y un json con información del error)"
+					},
+					"response": []
+				},
+				{
+					"name": "Trago id=9",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cocktail-maps-ws.herokuapp.com/tragos/9",
+							"protocol": "https",
+							"host": [
+								"cocktail-maps-ws",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"tragos",
+								"9"
+							]
+						},
+						"description": "Obtiene un string que corresponde la codificación en 64 bits de la imagen correspondiente al trago con ID=9"
+					},
+					"response": []
+				},
+				{
+					"name": "Imagen Trago id=9",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cocktail-maps-ws.herokuapp.com/tragos/9/image",
+							"protocol": "https",
+							"host": [
+								"cocktail-maps-ws",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"tragos",
+								"9",
+								"image"
+							]
+						},
+						"description": "Obtiene un string que es la codificación en 64 bits de la imagen correspondiente al trago con ID=9"
+					},
+					"response": []
+				}
+			],
+			"description": "Contiene los request correspondientes a tragos"
+		},
+		{
+			"name": "Tutoriales",
+			"item": [
+				{
+					"name": "Tutoriales",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cocktail-maps-ws.herokuapp.com/tutorials",
+							"protocol": "https",
+							"host": [
+								"cocktail-maps-ws",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"tutorials"
+							]
+						},
+						"description": "Obtiene todos los tutoriales"
+					},
+					"response": []
+				},
+				{
+					"name": "Tutorial id=4",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cocktail-maps-ws.herokuapp.com/tutorials/4",
+							"protocol": "https",
+							"host": [
+								"cocktail-maps-ws",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"tutorials",
+								"4"
+							]
+						},
+						"description": "Obtiene el tutorial con ID=4"
+					},
+					"response": []
+				},
+				{
+					"name": "Imagen Tutorial id=4",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cocktail-maps-ws.herokuapp.com/tutorials/4/image",
+							"protocol": "https",
+							"host": [
+								"cocktail-maps-ws",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"tutorials",
+								"4",
+								"image"
+							]
+						},
+						"description": "Obtiene la imagen del tutorial con ID=1 (Es un tutorial que no tiene imagen, para probar que devuelve 404 y un json con información del error)"
+					},
+					"response": []
+				},
+				{
+					"name": "Tutorial id=8",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cocktail-maps-ws.herokuapp.com/tutorials/8",
+							"protocol": "https",
+							"host": [
+								"cocktail-maps-ws",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"tutorials",
+								"8"
+							]
+						},
+						"description": "Obtiene el tutorial con ID=8"
+					},
+					"response": []
+				},
+				{
+					"name": "Imagen Tutorial id=8",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cocktail-maps-ws.herokuapp.com/tutorials/8/image",
+							"protocol": "https",
+							"host": [
+								"cocktail-maps-ws",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"tutorials",
+								"8",
+								"image"
+							]
+						},
+						"description": "Obtiene un string que es la codificación en 64 bits de la imagen correspondiente al tutorial con ID=8"
+					},
+					"response": []
+				}
+			],
+			"description": "Contiene los request correspondientes a tutoriales"
+		},
+		{
+			"name": "Etiquetas",
+			"item": [
+				{
+					"name": "Etiquetas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cocktail-maps-ws.herokuapp.com/etiquetas",
+							"protocol": "https",
+							"host": [
+								"cocktail-maps-ws",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"etiquetas"
+							]
+						},
+						"description": "Obtiene todas las etiquetas"
+					},
+					"response": []
+				},
+				{
+					"name": "Etiqueta id=1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cocktail-maps-ws.herokuapp.com/etiquetas/1",
+							"protocol": "https",
+							"host": [
+								"cocktail-maps-ws",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"etiquetas",
+								"1"
+							]
+						},
+						"description": "Obtiene la etiqueta con ID=1"
+					},
+					"response": []
+				},
+				{
+					"name": "Etiqueta id=4",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cocktail-maps-ws.herokuapp.com/etiquetas/4",
+							"protocol": "https",
+							"host": [
+								"cocktail-maps-ws",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"etiquetas",
+								"4"
+							]
+						},
+						"description": "Obtiene la etiqueta con ID=4"
+					},
+					"response": []
+				}
+			],
+			"description": "Contiene los request correspondientes a etiquetas"
+		}
+	]
+}
